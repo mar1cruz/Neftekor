@@ -1,0 +1,113 @@
+.fuel {
+  background-image: url("../img/02-background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+
+  .left-image {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 800px;
+  }
+
+  .fuel__wrapper {
+    position: relative;
+
+    .wrapper__body {
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      .body__left {
+        position: relative;
+        z-index: 3;
+        border-radius: 30px 0 0 30px;
+        margin: 380px 0 0 9px;
+        padding: 90px 97px 80px;
+      }
+
+      .body__right {
+        height: fit-content;
+        padding: 80px 97px 100px;
+        margin-left: -10px;
+        border-radius: 0 0 30px 0;
+      }
+
+      .body__left,
+      .body__right {
+        background-color: rgba(44, 44, 44, 0.8);
+        width: fit-content;
+
+        @media (max-width: 1200px) {
+          margin: 50px;
+          border-radius: 20px;
+        }
+
+        @media (max-width: 576px) {
+          padding: 32px;
+        }
+      }
+
+      .fuel__container {
+        .fuel__title {
+          color: #fff;
+          font-family: Inter;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 15px;
+
+          @media (max-width: 576px) {
+            text-align: center;
+            font-size: 24px;
+          }
+        }
+        .fuel__text {
+          max-width: 345px;
+          color: #cecece;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 30px;
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+          }
+        }
+        .fuel__button {
+          cursor: pointer;
+          padding: 13px 118px;
+          color: #fff;
+          text-align: center;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          border-radius: 5px;
+          background: #dba833;
+          max-width: 350px;
+
+          @media (max-width: 576px) {
+            padding: 9px 63px;
+          }
+        }
+      }
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
