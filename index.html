@@ -8,7 +8,30 @@
   </head>
   <body>
     <div class="app">
-      <header class="header"></header>
+      <header class="header">
+        <div class="header__wrapper container">
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <a class="nav__links" href="./index.html"
+                  ><img class="logo" src="./src/img/logo.png" alt=""
+                /></a>
+              </li>
+              <li><a href="./index.html" class="nav__links">Главная</a></li>
+
+              <li><a href="" class="nav__links">Дизельное топливо</a></li>
+              <li><a href="" class="nav__links">Мини-АЗС</a></li>
+              <li><a href="" class="nav__links">Печное топливо</a></li>
+              <li><a href="" class="nav__links">Судовое топливо</a></li>
+              <li><a href="" class="nav__links">Блог</a></li>
+              <li><a href="" class="nav__links">Контакты</a></li>
+              <li>
+                <a href="" class="nav__links"> Личный кабинет </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
       <main class="main">
         <section class="supply">
@@ -19,8 +42,9 @@
                 Московской области
               </h1>
               <p class="body__price">От 1000 литров и от 46 рублей за литр</p>
-              <!-- добавить ссылку -->
-              <a href="#" class="body__button">Заказать звонок</a>
+              <a href="./index.html#call" class="body__button"
+                >Заказать звонок</a
+              >
             </div>
             <h2 class="supply__footer">Нефтепродукты</h2>
           </div>
@@ -69,11 +93,27 @@
         <section class="connection">
           <div class="connection__wrapper container">
             <h2 class="connection__title">
-              <form class="connection__form">
+              Свяжитесь <span class="gold">с нами!</span>
+              <form id="call" class="connection__form">
                 <div class="form__body">
-                  <input type="text" placeholder="Имя" />
-                  <input type="tel" placeholder="Телефон" />
-                  <input type="button" /> Отправить
+                  <input class="input__name" type="text" placeholder="Имя" />
+                  <input
+                    class="input__phone"
+                    type="tel"
+                    placeholder="Телефон"
+                  />
+                  <a class="input__button"> Отправить</a>
+                  <label for="checkbox">
+                    <input id="checkbox" class="checkbox" type="checkbox" />
+                    <span class="text">
+                      Согласен с
+                      <a
+                        target="_blank"
+                        href="https://quizzickle.com/privacy_txt.html"
+                        >политикой конфиденциальности
+                      </a></span
+                    >
+                  </label>
                 </div>
               </form>
             </h2>
@@ -81,7 +121,63 @@
         </section>
       </main>
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__wrapper container">
+          <div class="wrapper__info">
+            <p class="info__rights">©2022 Все права защищены</p>
+            <a
+              target="_blank"
+              href="https://quizzickle.com/privacy_txt.html"
+              class="info__confidentiality"
+              >Политика конфиденциальности</a
+            >
+          </div>
+
+          <div class="wrapper__social">
+            <p class="social__text">Мы в соцсетях:</p>
+
+            <div class="social__wrapper">
+              <a
+                target="_blank"
+                href="https://dzen.ru/?utm_referrer=www.google.com"
+                class="social__links"
+              >
+                <svg class="social__image">
+                  <use xlink:href="./src/img/icons/sprite.svg#yandex"></use>
+                </svg>
+              </a>
+
+              <a target="_blank" href="https://vk.com/" class="social__links">
+                <svg class="social__image">
+                  <use xlink:href="./src/img/icons/sprite.svg#vk"></use>
+                </svg>
+              </a>
+
+              <a
+                target="_blank"
+                href="https://web.whatsapp.com/"
+                class="social__links"
+              >
+                <svg class="social__image">
+                  <use xlink:href="./src/img/icons/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+
+              <a
+                target="_blank"
+                href="https://web.telegram.org/a/"
+                class="social__links"
+              >
+                <svg class="social__image">
+                  <use xlink:href="./src/img/icons/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
