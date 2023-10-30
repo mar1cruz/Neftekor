@@ -1,0 +1,44 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #dba833;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background: #8b6b20;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.app {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.gold {
+  color: #dba833;
+}

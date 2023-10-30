@@ -1,0 +1,127 @@
+.diesel {
+  margin: 40px 0px;
+
+  .diesel__container {
+    .diesel__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      border-radius: 40px;
+      background: #fff;
+
+      .body__item {
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+        border: 2px dashed #828282;
+        background: #fff;
+
+        .item__image {
+          .image {
+            max-width: 300px;
+            @media (max-width: 576px) {
+              max-width: 200px;
+            }
+          }
+
+          &:last-child {
+            padding-top: 87px;
+          }
+
+          &.first__image {
+            @media (max-width: 992px) {
+              padding-left: 105px;
+            }
+            @media (max-width: 576px) {
+              padding-left: 75px;
+            }
+          }
+
+          &.second__image {
+            @media (max-width: 992px) {
+              padding-left: 65px;
+            }
+
+            @media (max-width: 992px) {
+              padding-left: 35px;
+            }
+          }
+
+          &.third__image {
+            @media (max-width: 992px) {
+              padding-left: 50px;
+            }
+
+            @media (max-width: 992px) {
+              padding-left: 25px;
+            }
+          }
+        }
+
+        .item__body {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          padding: 58px 0;
+
+          .body__title {
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 10px;
+
+            @media (max-width: 576px) {
+              font-size: 24px;
+            }
+          }
+          .body__text {
+            max-width: 580px;
+            color: #5b5b5b;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+
+            @media (max-width: 576px) {
+              font-size: 16px;
+            }
+          }
+          .body__button {
+            background-color: #fff;
+            color: #dba833;
+            border-radius: 5px;
+            border: 2px solid #dba833;
+            max-width: 350px;
+            width: 100%;
+            padding: 13px 0;
+
+            @media (max-width: 576px) {
+              max-width: 250px;
+            }
+          }
+
+          @media (max-width: 576px) {
+            padding: 20px 0;
+          }
+        }
+
+        @media (max-width: 992px) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin: 20px 0;
+  }
+}

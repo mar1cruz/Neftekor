@@ -1,10 +1,7 @@
 @import "./common";
 @import "./reset";
 @import "./index/supply";
-@import "./index/fuel";
-@import "./index/battery";
+@import "./index/header";
 @import "./index/connection";
 @import "./index/footer";
-@import "./index/header";
-
-
+@import "./diesel/diesel.scss";

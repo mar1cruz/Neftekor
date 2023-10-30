@@ -23,7 +23,12 @@
 
           input {
             height: 44px;
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: scale(1.05);
+            }
           }
+
           .input__phone,
           .input__name {
             max-width: 400px;
@@ -50,24 +55,25 @@
             }
           }
 
-          .input__button {
+          .input__button.button {
             position: relative;
             height: 44px;
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
             color: #dba833;
-            font-family: Inter;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            border-radius: 5px;
             border: 2px solid #dba833;
             background: #fff;
             backdrop-filter: blur(2px);
+            transition: background-color 0.3s ease, border 0.3s ease,
+              transform 0.3s ease;
             width: 100%;
+
+            &:hover {
+              transform: scale(1.05);
+              background-color: rgba(30, 30, 30, 0.7);
+              border: 2px solid #fff;
+            }
           }
 
           .checkbox {
@@ -84,6 +90,7 @@
             position: absolute;
             right: 0px;
             top: 40px;
+            height: fit-content;
 
             .text {
               margin-left: 10px;
@@ -114,7 +121,7 @@
             }
 
             @media (max-width: 768px) {
-              bottom: -160px;
+              top: 170px;
               left: 0;
             }
           }
