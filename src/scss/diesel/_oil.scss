@@ -76,6 +76,26 @@
             line-height: normal;
             margin-bottom: 10px;
 
+            &.title {
+              margin-bottom: 0px;
+              max-width: 915px;
+              color: #000;
+              text-align: center;
+              font-family: Rubik;
+              font-size: 48px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+
+              @media (max-width: 768px) {
+                font-size: 34px;
+              }
+
+              @media (max-width: 576px) {
+                font-size: 27px;
+              }
+            }
+
             @media (max-width: 576px) {
               font-size: 24px;
             }

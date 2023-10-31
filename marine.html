@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./src/css/index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neftekor</title>
+    <link rel="stylesheet" href="./src/css/marine.css" />
+    <title>marine</title>
   </head>
   <body>
     <div class="app">
@@ -51,11 +51,12 @@
             <div class="supply__wrapper container">
               <div class="supply__body">
                 <h1 class="body__title">
-                  <span class="gold">Поставка нефтепродуктов</span> в Москве и
-                  Московской области
+                  <span class="gold">Поставка судового</span> дизельного
+                  <span class="gold">топлива</span> в Москве и Московской
+                  области
                 </h1>
                 <p class="body__price">От 1000 литров и от 46 рублей за литр</p>
-                <a href="./index.html#call" class="body__button button"
+                <a href="./marine.html" class="body__button button"
                   >Заказать звонок</a
                 >
               </div>
@@ -64,47 +65,67 @@
           </div>
         </section>
 
-        <section class="fuel">
-          <div class="fuel__wrapper">
-            <div class="wrapper__body container">
-              <div class="body__left">
-                <div class="fuel__container">
-                  <div class="fuel__title">Судовое топливо</div>
-                  <div class="fuel__text">
-                    Мы предоставляем судовое дизельное топливо как для
-                    физических лиц, так и компаниям
-                  </div>
-                  <a href="marine.html" class="fuel__button button"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-
-              <div class="body__right">
-                <div class="fuel__container">
-                  <div class="fuel__title">Дизельное топливо</div>
-                  <div class="fuel__text">
-                    Мы являемся надежным поставщиком дизельного топлива в Москве
-                    и Московской области.
-                  </div>
-                  <a href="diesel.html" class="fuel__button button"
-                    >Подробнее</a
-                  >
+        <section class="oil">
+          <div class="oil__container container">
+            <div class="oil__wrapper">
+              <div class="body__item">
+                <div class="item__body">
+                  <h2 class="body__title title">
+                    Вы получите
+                    <span class="gold">персональные условия</span> доставки
+                    топлива <span class="gold">в любых объемах</span> и по
+                    <span class="gold">нужному вам графику.</span>
+                  </h2>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="battery">
-          <div class="fuel__container container">
-            <div class="fuel__title">Печное топливо</div>
-            <div class="fuel__text">
-              Печное топливо может служить для отопления коммерческой
-              недвижимости и частных домов, строительных площадок, в качестве
-              топлива для небольших котельных и сельхоз организаций.
+        <section class="benefit">
+          <div class="benefit__wrapper container">
+            <h2 class="benefit__title">
+              <snan class="gold">Преимущества</snan> работы с нами
+            </h2>
+            <p class="benefit__text">
+              Отработанные логистические схемы и наличие собственного автопарка
+              гарантируют минимальные сроки поставки
+            </p>
+
+            <div class="benefit__container">
+              <div class="item">
+                <svg class="item-image__first dom">
+                  <use xlink:href="./src/img/icons/sprite.svg#dom"></use>
+                </svg>
+
+                <p class="text">
+                  Мы сотрудничаем с известными нефтеперерабатывающими заводами
+                  России. Гарантируем соответствие топлива всем требованиям
+                </p>
+              </div>
+
+              <div class="item">
+                <svg class="item-image__second dvigatel">
+                  <use xlink:href="./src/img/icons/sprite.svg#dvigatel"></use>
+                </svg>
+
+                <p class="text">
+                  Точный учет объема топлива при отгрузке обеспечивается
+                  современным оборудованием контроля налива.
+                </p>
+              </div>
+
+              <div class="item">
+                <svg class="item-image__third sale">
+                  <use xlink:href="./src/img/icons/sprite.svg#sale"></use>
+                </svg>
+
+                <p class="text">
+                  Низкие и выгодные для вас цены, индивидуальный условия для
+                  постоянных клиентов.
+                </p>
+              </div>
             </div>
-            <a href="heating.html" class="fuel__button button">Подробнее</a>
           </div>
         </section>
 
@@ -126,7 +147,7 @@
                     type="tel"
                     placeholder="Телефон"
                   />
-                  <button class="input__button button">Отправить</button>
+                  <a class="input__button button"> Отправить</a>
                   <label for="checkbox">
                     <input
                       required

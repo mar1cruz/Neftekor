@@ -8,49 +8,59 @@
   </head>
   <body>
     <div class="app">
-      <header class="header">
-        <div class="header__wrapper container">
-          <a class="nav__links" href="./index.html"
-            ><img class="logo" src="./src/img/logo.png" alt=""
-          /></a>
-          <nav class="header__nav">
-            <ul>
-              <li><a href="./index.html" class="nav__links">Главная</a></li>
-
-              <li><a href="" class="nav__links">Дизельное топливо</a></li>
-              <li><a href="" class="nav__links">Мини-АЗС</a></li>
-              <li><a href="" class="nav__links">Печное топливо</a></li>
-              <li><a href="" class="nav__links">Судовое топливо</a></li>
-              <li><a href="" class="nav__links">Блог</a></li>
-              <li><a href="" class="nav__links">Контакты</a></li>
-              <li>
-                <a href="" class="nav__links"> Личный кабинет </a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="burger__menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </header>
-
       <main class="main">
         <section class="supply">
-          <div class="supply__wrapper container">
-            <div class="supply__body">
-              <h1 class="body__title">
-                <span class="gold">Поставка</span> дизельного топлива
-                <span class="gold">Евро 5</span> в Москве и Московской области
-              </h1>
-              <p class="body__price">От 1000 литров и от 46 рублей за литр</p>
-              <a href="./index.html#call" class="body__button button"
-                >Заказать звонок</a
-              >
+          <header class="header">
+            <div class="container container-inner">
+              <div class="header-row">
+                <div class="header__logo">
+                  <img class="logo" src="./src/img/logo.png" alt="" />
+                </div>
+                <div class="menu__icon">
+                  <span></span>
+                </div>
+                <div class="header__nav">
+                  <nav class="nav__menu">
+                    <ul>
+                      <li>
+                        <a href="index.html" class="header__links">Главная</a>
+                      </li>
+                      <li>
+                        <a href="diesel.html" class="header__links"
+                          >Дизельное топливо</a
+                        >
+                      </li>
+                      <li>
+                        <a href="heating.html" class="header__links"
+                          >Печное топливо</a
+                        >
+                      </li>
+                      <li>
+                        <a href="marine.html" class="header__links"
+                          >Судовое топливо</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
-            <h2 class="supply__footer">Нефтепродукты</h2>
+          </header>
+
+          <div class="supply__main">
+            <div class="supply__wrapper container">
+              <div class="supply__body">
+                <h1 class="body__title">
+                  <span class="gold">Поставка</span> дизельного топлива
+                  <span class="gold">Евро 5</span> в Москве и Московской области
+                </h1>
+                <p class="body__price">От 1000 литров и от 46 рублей за литр</p>
+                <a href="./diesel.html#call" class="body__button button"
+                  >Заказать звонок</a
+                >
+              </div>
+              <h2 class="supply__footer">Нефтепродукты</h2>
+            </div>
           </div>
         </section>
 
@@ -69,7 +79,9 @@
                     вторичных углеводородных фракций с температурой выкипания от
                     40 до 250 град С.
                   </p>
-                  <a href="" class="body__button button">Заказать</a>
+                  <a href="diesel.html#call" class="body__button button"
+                    >Заказать</a
+                  >
                 </div>
               </div>
 
@@ -87,7 +99,9 @@
                     двигателя и его стабильную работу, подходит для
                     сельскохозяйственной и грузовой техники.
                   </p>
-                  <a href="" class="body__button button">Заказать</a>
+                  <a href="diesel.html#call" class="body__button button"
+                    >Заказать</a
+                  >
                 </div>
               </div>
 
@@ -103,7 +117,9 @@
                     необходимо для корректной и безопасной работы двигателей при
                     минусовых температурах.
                   </p>
-                  <a href="" class="body__button button">Заказать</a>
+                  <a href="diesel.html#call" class="body__button button"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </div>
@@ -116,15 +132,26 @@
               Свяжитесь <span class="gold">с нами!</span>
               <form id="call" class="connection__form">
                 <div class="form__body">
-                  <input class="input__name" type="text" placeholder="Имя" />
                   <input
+                    required
+                    class="input__name"
+                    type="text"
+                    placeholder="Имя"
+                  />
+                  <input
+                    required
                     class="input__phone"
                     type="tel"
                     placeholder="Телефон"
                   />
                   <a class="input__button button"> Отправить</a>
                   <label for="checkbox">
-                    <input id="checkbox" class="checkbox" type="checkbox" />
+                    <input
+                      required
+                      id="checkbox"
+                      class="checkbox"
+                      type="checkbox"
+                    />
                     <span class="text">
                       Согласен с
                       <a
@@ -197,5 +224,6 @@
         </div>
       </footer>
     </div>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>

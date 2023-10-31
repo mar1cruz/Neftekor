@@ -1,16 +1,27 @@
 const connectBtn = document.querySelector(".input__button");
 const inputs = document.querySelectorAll("input");
-const burgerMenu = document.querySelector(".burger__menu");
-const header = document.querySelector(".header");
+const menu__icon = document.querySelector(".menu__icon");
+const nav = document.querySelector(".header__nav");
 const body = document.querySelector("body");
 
-connectBtn.addEventListener("click", () => {
+connectBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  
+  let allFieldsFilled = true;
+
   inputs.forEach((input) => {
-    input.value = "";
+    if (!input.value) {
+      allFieldsFilled = false;
+    }
   });
+
+  if (allFieldsFilled) {
+    window.location.href = "../../gratitude.html";
+  }
 });
 
-burgerMenu.addEventListener("click", () => {
-  header.classList.toggle("active");
+menu__icon.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  menu__icon.classList.toggle("active");
   body.classList.toggle("_lock");
 });
