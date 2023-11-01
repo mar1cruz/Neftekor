@@ -7,24 +7,6 @@ const cookiePopup = document.getElementById("cookie-popup");
 const acceptButton = document.getElementById("cookie-accept");
 const checkbox = document.querySelector("#checkbox");
 
-let isChecked = false;
-
-connectBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  let allFieldsFilled = true;
-
-  inputs.forEach((input) => {
-    if (!input.value) {
-      allFieldsFilled = false;
-    }
-  });
-
-  if (allFieldsFilled && isChecked) {
-    window.location.href = "../../gratitude.html";
-  }
-});
-
 menu__icon.addEventListener("click", () => {
   nav.classList.toggle("active");
   menu__icon.classList.toggle("active");
