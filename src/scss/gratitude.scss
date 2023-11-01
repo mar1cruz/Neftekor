@@ -1,13 +1,66 @@
 @import "./reset";
+@import "./common";
 
-.wrapper {
+.gratitude {
+  background: #dba833;
+  color: #fff;
+  font-family: Inter;
+  text-align: center;
+  padding: 20px;
   position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.gratitude__body {
+  position: absolute;
+  max-width: 600px;
   top: 50%;
+  width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
-  .text {
-    margin-bottom: 10px;
-    font-size: 25px;
+.gratitude__text {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media (max-width: 576px) {
+    font-size: 34px;
   }
+}
+
+.gratitude__message {
+  font-size: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 576px) {
+    font-size: 17px;
+  }
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #dba833;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  max-width: 500px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  @media (max-width: 576px) {
+    max-width: 250px;
+  }
+}
+
+.button:hover {
+  background: #8b6b20;
+  transform: scale(1.1);
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button {
   display: block;
   margin: 0 auto;
@@ -190,7 +191,7 @@ legend {
 }
 @media (max-width: 576px) {
   .supply .supply__main .supply__wrapper .supply__body .body__title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .supply .supply__main .supply__wrapper .supply__body .body__price {
@@ -214,7 +215,7 @@ legend {
 }
 @media (max-width: 576px) {
   .supply .supply__main .supply__wrapper .supply__body .body__button {
-    max-width: 230px;
+    max-width: 248px;
     padding: 14px 40px;
   }
 }
@@ -433,20 +434,21 @@ legend {
   line-height: normal;
   margin-bottom: 10px;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body {
+.connection .connection__wrapper .connection__form .form__body {
   position: relative;
   display: flex;
   gap: 15px;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body input {
+.connection .connection__wrapper .connection__form .form__body input {
   height: 44px;
   transition: transform 0.3s ease;
+  color: #fff;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body input:hover {
+.connection .connection__wrapper .connection__form .form__body input:hover {
   transform: scale(1.05);
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__phone,
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__name {
+.connection .connection__wrapper .connection__form .form__body .input__phone,
+.connection .connection__wrapper .connection__form .form__body .input__name {
   max-width: 400px;
   width: 100%;
   border-radius: 5px;
@@ -457,7 +459,7 @@ legend {
   text-indent: 10px;
   font-size: 20px;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__phone::-moz-placeholder, .connection .connection__wrapper .connection__title .connection__form .form__body .input__name::-moz-placeholder {
+.connection .connection__wrapper .connection__form .form__body .input__phone::-moz-placeholder, .connection .connection__wrapper .connection__form .form__body .input__name::-moz-placeholder {
   transform: translateY(-5%);
   color: #fff;
   font-family: Inter;
@@ -466,8 +468,8 @@ legend {
   font-weight: 500;
   line-height: normal;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__phone::placeholder,
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__name::placeholder {
+.connection .connection__wrapper .connection__form .form__body .input__phone::placeholder,
+.connection .connection__wrapper .connection__form .form__body .input__name::placeholder {
   transform: translateY(-5%);
   color: #fff;
   font-family: Inter;
@@ -477,12 +479,12 @@ legend {
   line-height: normal;
 }
 @media (max-width: 768px) {
-  .connection .connection__wrapper .connection__title .connection__form .form__body .input__phone,
-  .connection .connection__wrapper .connection__title .connection__form .form__body .input__name {
+  .connection .connection__wrapper .connection__form .form__body .input__phone,
+  .connection .connection__wrapper .connection__form .form__body .input__name {
     max-width: 100%;
   }
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__button.button {
+.connection .connection__wrapper .connection__form .form__body .input__button.button {
   position: relative;
   height: 44px;
   display: flex;
@@ -496,12 +498,12 @@ legend {
   transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
   width: 100%;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body .input__button.button:hover {
+.connection .connection__wrapper .connection__form .form__body .input__button.button:hover {
   transform: scale(1.05);
   background-color: rgba(30, 30, 30, 0.7);
   border: 2px solid #fff;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body .checkbox {
+.connection .connection__wrapper .connection__form .form__body .checkbox {
   color: #fff;
   font-family: Inter;
   font-size: 16px;
@@ -509,7 +511,7 @@ legend {
   font-weight: 700;
   line-height: normal;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body label {
+.connection .connection__wrapper .connection__form .form__body label {
   display: flex;
   align-items: center;
   position: absolute;
@@ -518,7 +520,7 @@ legend {
   height: -moz-fit-content;
   height: fit-content;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body label .text {
+.connection .connection__wrapper .connection__form .form__body label .text {
   margin-left: 10px;
   color: #000000;
   font-family: Inter;
@@ -527,7 +529,7 @@ legend {
   font-weight: 700;
   line-height: normal;
 }
-.connection .connection__wrapper .connection__title .connection__form .form__body label .text a {
+.connection .connection__wrapper .connection__form .form__body label .text a {
   font-family: Inter;
   color: #000000;
   font-size: 16px;
@@ -537,23 +539,23 @@ legend {
   text-decoration-line: underline;
 }
 @media (max-width: 768px) {
-  .connection .connection__wrapper .connection__title .connection__form .form__body label .text a {
+  .connection .connection__wrapper .connection__form .form__body label .text a {
     color: #fff;
   }
 }
 @media (max-width: 768px) {
-  .connection .connection__wrapper .connection__title .connection__form .form__body label .text {
+  .connection .connection__wrapper .connection__form .form__body label .text {
     color: #fff;
   }
 }
 @media (max-width: 768px) {
-  .connection .connection__wrapper .connection__title .connection__form .form__body label {
+  .connection .connection__wrapper .connection__form .form__body label {
     top: 170px;
     left: 0;
   }
 }
 @media (max-width: 768px) {
-  .connection .connection__wrapper .connection__title .connection__form .form__body {
+  .connection .connection__wrapper .connection__form .form__body {
     flex-direction: column;
   }
 }
@@ -733,6 +735,13 @@ legend {
     font-size: 30px;
     color: azure;
   }
+}
+@media (max-width: 992px) and (max-width: 576px) {
+  .header__nav .nav__menu ul .header__links {
+    font-size: 25px;
+  }
+}
+@media (max-width: 992px) {
   .header__nav.active {
     transform: translate(0, 0);
   }
@@ -785,5 +794,58 @@ legend {
   .menu__icon span {
     top: 50%;
     transform: scale(1) translate(0, -50%);
+  }
+}
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.cookie-popup__content {
+  background: #dba833;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-popup__text {
+  font-family: Inter;
+  font-size: 16px;
+  margin: 0;
+}
+
+.cookie-popup__button {
+  background: #fff;
+  color: #dba833;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Стили для анимации появления попапа */
+.cookie-popup.show {
+  display: block;
+  animation: slide-up 0.5s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

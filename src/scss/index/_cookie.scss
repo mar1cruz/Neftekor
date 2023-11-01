@@ -1,0 +1,53 @@
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.cookie-popup__content {
+  background: #dba833;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-popup__text {
+  font-family: Inter;
+  font-size: 16px;
+  margin: 0;
+}
+
+.cookie-popup__button {
+  background: #fff;
+  color: #dba833;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Стили для анимации появления попапа */
+.cookie-popup.show {
+  display: block;
+  animation: slide-up 0.5s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

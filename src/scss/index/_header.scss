@@ -89,6 +89,10 @@
       .header__links {
         font-size: 30px;
         color: azure;
+
+        @media (max-width: 576px) {
+          font-size: 25px;
+        }
       }
     }
   }

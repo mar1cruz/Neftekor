@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /src/
+Disallow: /src/css/
+Disallow: /src/js/
+Disallow: /src/img/
+Disallow: /src/icons/
+Disallow: /privacy_txt.html
+Disallow: /index.html#call
+Disallow: /diesel.html
+Disallow: /heating.html
+Disallow: /marine.html
+Disallow: /sitemap.xml
+
+Sitemap: https://neftekor.vercel.app/

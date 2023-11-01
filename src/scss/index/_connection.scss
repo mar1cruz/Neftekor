@@ -14,106 +14,103 @@
       font-weight: 600;
       line-height: normal;
       margin-bottom: 10px;
+    }
 
-      .connection__form {
-        .form__body {
-          position: relative;
-          display: flex;
-          gap: 15px;
+    .connection__form {
+      .form__body {
+        position: relative;
+        display: flex;
+        gap: 15px;
 
-          input {
-            height: 44px;
-            transition: transform 0.3s ease;
-            &:hover {
-              transform: scale(1.05);
-            }
+        input {
+          height: 44px;
+          transition: transform 0.3s ease;
+          color: #fff;
+          &:hover {
+            transform: scale(1.05);
           }
+        }
 
-          .input__phone,
-          .input__name {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 5px;
-            border: 1px solid #fff;
-            background: rgba(30, 30, 30, 0.7);
-            backdrop-filter: blur(2px);
-            text-indent: 10px;
-            font-size: 20px;
+        .input__phone,
+        .input__name {
+          max-width: 400px;
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid #fff;
+          background: rgba(30, 30, 30, 0.7);
+          backdrop-filter: blur(2px);
+          text-indent: 10px;
+          font-size: 20px;
 
-            &::placeholder {
-              transform: translateY(-5%);
-              color: #fff;
-              font-family: Inter;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-            }
-
-            @media (max-width: 768px) {
-              max-width: 100%;
-            }
-          }
-
-          .input__button.button {
-            position: relative;
-            height: 44px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #dba833;
-            border: 2px solid #dba833;
-            background: #fff;
-            backdrop-filter: blur(2px);
-            transition: background-color 0.3s ease, border 0.3s ease,
-              transform 0.3s ease;
-            width: 100%;
-
-            &:hover {
-              transform: scale(1.05);
-              background-color: rgba(30, 30, 30, 0.7);
-              border: 2px solid #fff;
-            }
-          }
-
-          .checkbox {
+          &::placeholder {
+            transform: translateY(-5%);
             color: #fff;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
+        }
+
+        .input__button.button {
+          position: relative;
+          height: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #dba833;
+          border: 2px solid #dba833;
+          background: #fff;
+          backdrop-filter: blur(2px);
+          transition: background-color 0.3s ease, border 0.3s ease,
+            transform 0.3s ease;
+          width: 100%;
+
+          &:hover {
+            transform: scale(1.05);
+            background-color: rgba(30, 30, 30, 0.7);
+            border: 2px solid #fff;
+          }
+        }
+
+        .checkbox {
+          color: #fff;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        label {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          right: 0px;
+          top: 40px;
+          height: fit-content;
+
+          .text {
+            margin-left: 10px;
+            color: #000000;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-          }
-          label {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            right: 0px;
-            top: 40px;
-            height: fit-content;
-
-            .text {
-              margin-left: 10px;
-              color: #000000;
+            a {
               font-family: Inter;
+              color: #000000;
+
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
-              a {
-                font-family: Inter;
-                color: #000000;
-
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                text-decoration-line: underline;
-
-                @media (max-width: 768px) {
-                  color: #fff;
-                }
-              }
+              text-decoration-line: underline;
 
               @media (max-width: 768px) {
                 color: #fff;
@@ -121,14 +118,18 @@
             }
 
             @media (max-width: 768px) {
-              top: 170px;
-              left: 0;
+              color: #fff;
             }
           }
 
           @media (max-width: 768px) {
-            flex-direction: column;
+            top: 170px;
+            left: 0;
           }
+        }
+
+        @media (max-width: 768px) {
+          flex-direction: column;
         }
       }
     }

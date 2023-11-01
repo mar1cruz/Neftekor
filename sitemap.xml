@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://neftekor.vercel.app/</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://neftekor.vercel.app/diesel.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://neftekor.vercel.app/heating.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://neftekor.vercel.app/marine.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+</urlset>

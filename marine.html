@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/marine.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>marine</title>
   </head>
   <body>
     <div class="app">
+      <div class="cookie-popup" id="cookie-popup">
+        <div class="cookie-popup__content">
+          <p class="cookie-popup__text">
+            Этот сайт использует файлы cookie для обеспечения лучшего
+            пользовательского опыта.
+          </p>
+          <button class="cookie-popup__button" id="cookie-accept">
+            Принять
+          </button>
+        </div>
+      </div>
+
       <main class="main">
         <section class="supply">
           <header class="header">
@@ -56,7 +74,7 @@
                   области
                 </h1>
                 <p class="body__price">От 1000 литров и от 46 рублей за литр</p>
-                <a href="./marine.html" class="body__button button"
+                <a href="./marine.html#call" class="body__button button"
                   >Заказать звонок</a
                 >
               </div>

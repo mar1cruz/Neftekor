@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neftekor</title>
   </head>
   <body>
     <div class="app">
+      <div class="cookie-popup" id="cookie-popup">
+        <div class="cookie-popup__content">
+          <p class="cookie-popup__text">
+            Этот сайт использует файлы cookie для обеспечения лучшего
+            пользовательского опыта.
+          </p>
+          <button class="cookie-popup__button" id="cookie-accept">
+            Принять
+          </button>
+        </div>
+      </div>
+
       <main class="main">
         <section class="supply">
           <header class="header">
@@ -112,40 +130,41 @@
           <div class="connection__wrapper container">
             <h2 class="connection__title">
               Свяжитесь <span class="gold">с нами!</span>
-              <form id="call" class="connection__form">
-                <div class="form__body">
-                  <input
-                    required
-                    class="input__name"
-                    type="text"
-                    placeholder="Имя"
-                  />
-                  <input
-                    required
-                    class="input__phone"
-                    type="tel"
-                    placeholder="Телефон"
-                  />
-                  <button class="input__button button">Отправить</button>
-                  <label for="checkbox">
-                    <input
-                      required
-                      id="checkbox"
-                      class="checkbox"
-                      type="checkbox"
-                    />
-                    <span class="text">
-                      Согласен с
-                      <a
-                        target="_blank"
-                        href="https://quizzickle.com/privacy_txt.html"
-                        >политикой конфиденциальности
-                      </a></span
-                    >
-                  </label>
-                </div>
-              </form>
             </h2>
+
+            <form id="call" class="connection__form">
+              <div class="form__body">
+                <input
+                  required
+                  class="input__name"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  required
+                  class="input__phone"
+                  type="tel"
+                  placeholder="Телефон"
+                />
+                <button class="input__button button">Отправить</button>
+                <label for="checkbox">
+                  <input
+                    required
+                    id="checkbox"
+                    class="checkbox"
+                    type="checkbox"
+                  />
+                  <span class="text">
+                    Согласен с
+                    <a
+                      target="_blank"
+                      href="https://quizzickle.com/privacy_txt.html"
+                      >политикой конфиденциальности
+                    </a></span
+                  >
+                </label>
+              </div>
+            </form>
           </div>
         </section>
       </main>
